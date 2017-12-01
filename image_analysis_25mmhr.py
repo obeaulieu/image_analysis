@@ -25,7 +25,7 @@ xdimension = range(0, 3500)
 ydimension = range(0, 1700)
 
 # create a new netCDF file for each experimet
-ncfile = 'ExperimentScans.nc'
+ncfile = '25mmhr_photos.nc'
 nc = Dataset(ncfile , 'w' , format='NETCDF4') #nc is now shell for data
 
 #dimensions
@@ -60,3 +60,4 @@ for filename in filenames:
 	i += 1
 
 nc.close() 
+
